@@ -51,4 +51,12 @@ def decode(filename):
             for row in range(rows):
                 val=img[row,col,ch]
                 bin_sequence=bin_sequence+str(val%2)
-    print(bin_sequence[0:1000])
+
+    binlist=[bin_sequence[i:i+8] for i in range(0, len(bin_sequence), 8)]
+    restored_message=""
+    for byte in binlist:
+        bytenum = int(byte,2)
+        if bytenum>31:
+            restored_message = restored_message + chr(bytenum)
+
+    return restored_message
