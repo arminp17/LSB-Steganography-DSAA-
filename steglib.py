@@ -23,8 +23,9 @@ def encode(filename,secret):
     rows = img.shape[0]
     cols = img.shape[1]
     channels = img.shape[2]
+    secret = secret + chr(3) ##Added Delimiter
     binsequence = generate_bin_sequence(secret)
-    print("Binary Secret: "+binsequence)
+    #print("Binary Secret: "+binsequence)
     if len(binsequence)>img.size:
         print("Image too Small for given input data")
         return
@@ -56,6 +57,8 @@ def decode(filename):
     restored_message=""
     for byte in binlist:
         bytenum = int(byte,2)
+        if bytenum==3:
+            break
         if bytenum>31:
             restored_message = restored_message + chr(bytenum)
 
