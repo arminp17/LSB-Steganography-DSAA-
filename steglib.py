@@ -2,6 +2,8 @@ import cv2
 import numpy
 from randomseqgen import *
 
+DELIMITER = 255
+
 def dec2bin(dec):
     str="{0:b}".format(dec)
     return "0"*(8-len(str)) + str
@@ -25,7 +27,8 @@ def rand_LSBencode(filename,secret,password):
     rows = img.shape[0]
     cols = img.shape[1]
     channels = img.shape[2]
-    secret = secret + chr(3) ##Added Delimiter
+    secret = secret + chr(DELIMITER) ##Added Delimiter
+
     binsequence = generate_bin_sequence(secret)
     #print("Binary Secret: "+binsequence)
     if len(binsequence)>img.size:
@@ -36,7 +39,7 @@ def rand_LSBencode(filename,secret,password):
     set_seed(password)
     mod_list=gen_rand_sequence(maxcount+(maxcount)//10,rows,cols,channels)
     for pixel_address in mod_list:
-        print(pixel_address)
+        #print(pixel_address)
         if count==maxcount:
             cv2.imwrite(filename.split(".")[0]+"_out.png",img)
             return
@@ -58,17 +61,20 @@ def rand_LSBdecode(filename,password):
         val=img[pixel_address[0],pixel_address[1],pixel_address[2]]
         bin_sequence=bin_sequence+str(val%2)
         if bitcount==7:
-            if int(bin_sequence[-8:],2)==3:
+            if int(bin_sequence[-8:],2)==DELIMITER:
                 break
             bitcount=0
         bitcount+=1
-        
+
     binlist=[bin_sequence[i:i+8] for i in range(0, len(bin_sequence), 8)]
     restored_message=""
+
     for byte in binlist:
         bytenum = int(byte,2)
-        if bytenum==3:
+
+        if bytenum==DELIMITER:
             break
+
         if bytenum>31:
             restored_message = restored_message + chr(bytenum)
 
