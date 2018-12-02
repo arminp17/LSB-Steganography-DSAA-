@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 from math import log10
+import os
 
 def psnr(img1,img2):
     rows = img1.shape[0]
@@ -15,6 +16,15 @@ def psnr(img1,img2):
 
     return 10*log10((255**2)/(diff/(rows*cols*ch)))
 
-img1 = cv2.imread("cow.jpg")
-img2=  cv2.imread("cow_out.png")
-print(psnr(img1,img2))
+
+
+filelist=[]
+dir = "tests"
+for file in os.listdir(dir):
+    if file.endswith(".jpg"):
+        filelist.append(os.path.join(dir, file))
+
+for file in filelist:
+    img1 = cv2.imread(file)
+    img2=  cv2.imread(file.split(".")[0]+"_out.png")
+    print(file + "  ::::: PSNR: "+str(psnr(img1,img2)))

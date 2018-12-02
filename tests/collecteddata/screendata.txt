@@ -1,0 +1,100 @@
+tests/Y0tmHtIjSh4.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/Y0tmHtIjSh4.jpg ::time taken = 150.075957ms
+tests/r0UQ0dDpC4E.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/r0UQ0dDpC4E.jpg ::time taken = 158.4346269999999ms
+tests/nsc9v-PhZyE.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/nsc9v-PhZyE.jpg ::time taken = 163.6540659999999ms
+tests/lNQ7kD8A1SI.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/lNQ7kD8A1SI.jpg ::time taken = 153.16270199999994ms
+tests/VzG5CbgFVXw.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/VzG5CbgFVXw.jpg ::time taken = 159.879946ms
+tests/YYGdoJ62L_Q.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/YYGdoJ62L_Q.jpg ::time taken = 163.95546500000015ms
+tests/3rx5i1gv7aA.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/3rx5i1gv7aA.jpg ::time taken = 160.26006800000013ms
+tests/AtbAMeNzQmE.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/AtbAMeNzQmE.jpg ::time taken = 160.47562599999975ms
+tests/HfGjO2vVeR0.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/HfGjO2vVeR0.jpg ::time taken = 164.4521280000002ms
+tests/uriAVs6oi3Y.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/uriAVs6oi3Y.jpg ::time taken = 158.02707000000015ms
+tests/kVpwsJ-bsmM.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/kVpwsJ-bsmM.jpg ::time taken = 158.13672200000008ms
+tests/0RzFRYMEosc.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/0RzFRYMEosc.jpg ::time taken = 156.41103500000008ms
+tests/c203mmajhag.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/c203mmajhag.jpg ::time taken = 146.6052849999997ms
+tests/y2yWnOkOUM0.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/y2yWnOkOUM0.jpg ::time taken = 163.38242499999956ms
+tests/-8SSD5JgyLc.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/-8SSD5JgyLc.jpg ::time taken = 159.70283099999972ms
+tests/Gko1gpyEpok.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/Gko1gpyEpok.jpg ::time taken = 157.56067200000024ms
+tests/u5Iuw17KEPg.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/u5Iuw17KEPg.jpg ::time taken = 160.7197870000001ms
+tests/YpF6ZvEOqOs.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/YpF6ZvEOqOs.jpg ::time taken = 158.4941830000002ms
+tests/4dRyVyXN6Lg.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/4dRyVyXN6Lg.jpg ::time taken = 159.48373599999988ms
+tests/L-4Xbxkmy9g.jpg
+Initializing Encoding:
+Dimensions of image:
+(640, 640, 3)
+tests/L-4Xbxkmy9g.jpg ::time taken = 153.08662800000005ms
